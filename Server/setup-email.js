@@ -35,7 +35,7 @@ SHIPROCKET_API_PASSWORD=your-shiprocket-api-password
 SHIPROCKET_COMPANY_ID=your-company-id
 
 # Client URL (for emails, etc.)
-CLIENT_URL=http://localhost:3000
+CLIENT_URL=https://aristerfront.onrender.com/
 `;
     
     fs.writeFileSync(envPath, envContent);
