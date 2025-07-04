@@ -1303,7 +1303,7 @@ router.post(
                   Your order is being prepared for shipment. You will receive tracking information 
                   with AWB code and expected delivery date once the courier is assigned.
                 </p>
-                <a href="${process.env.CLIENT_URL || 'http://localhost:3000'}/track/${order.orderId}" 
+                <a href="${process.env.CLIENT_URL || 'https://aristerfront.onrender.com'}/track/${order.orderId}" 
                    style="background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; display: inline-block; font-weight: bold; margin-top: 15px;">
                   Track Your Order
                 </a>
