@@ -8,6 +8,7 @@ const asyncHandler = require("express-async-handler");
 
 const jwtSecret = process.env.JWT_SECRET;
 
+// ecommerce-backend/routes/authRoutes.js
 const generateToken = (res, userId) => {
   const token = jwt.sign({ id: userId }, jwtSecret, {
     expiresIn: "168h",
@@ -15,9 +16,11 @@ const generateToken = (res, userId) => {
 
   res.cookie("token", token, {
     maxAge: 604800000, // 7 days
-    path: "/", // Ensure cookie is available for all routes
+    path: "/",
+    httpOnly: true, // Prevent client-side access
+    secure: process.env.NODE_ENV === "production", // Secure only in production
+    sameSite: process.env.NODE_ENV === "production" ? "none" : "lax", // None for cross-origin in production, lax for localhost
   });
-
 };
 
 const generateOtp = () => {
