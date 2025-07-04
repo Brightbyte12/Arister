@@ -19,7 +19,7 @@ router.post('/verify', async (req, res) => {
     if (expectedSignature === razorpay_signature) {
       // Create Shiprocket order
       const shiprocketResponse = await axios.post(
-        'http://localhost:5000/api/shiprocket/create',
+        'https://arister.onrender.com/api/shiprocket/create',
         order_details,
         { headers: { 'Content-Type': 'application/json' } }
       );
