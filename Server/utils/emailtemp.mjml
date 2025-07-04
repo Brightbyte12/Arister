@@ -1,0 +1,87 @@
+<mjml>
+    <mj-head>
+      <mj-title>Arister - Verification Code</mj-title>
+      <mj-preview>Your verification code from Arister</mj-preview>
+      <mj-attributes>
+        <mj-all font-family="Georgia, serif" />
+        <mj-text font-size="16px" line-height="1.6" />
+        <mj-section padding="0px" />
+      </mj-attributes>
+    </mj-head>
+  
+    <mj-body background-color="#B7C4CF">
+      
+      <!-- Header -->
+      <mj-section background-color="#2C3930" padding="20px 0">
+        <mj-column>
+          <mj-text align="center" font-size="28px" color="#EEE3CB" font-weight="bold" padding-bottom="4px">
+                            Arister
+          </mj-text>
+          <mj-text align="center" color="#A27B5C" font-size="13px" font-weight="300" text-transform="uppercase" letter-spacing="1px">
+            Handcrafted Elegance
+          </mj-text>
+        </mj-column>
+      </mj-section>
+  
+      <!-- Body -->
+      <mj-section background-color="#EEE3CB" padding="30px">
+        <mj-column>
+  
+          <mj-text align="center" color="#2C3930" font-size="22px" font-weight="bold" padding-bottom="10px">
+            Verification Code
+          </mj-text>
+  
+          <mj-text align="center" color="#3F4F44" font-size="14px" padding-bottom="10px">
+            Namaste, {{name}}
+          </mj-text>
+  
+          <mj-text align="center" color="#3F4F44" font-size="14px" padding-bottom="20px">
+            Thank you for joining the Arister family.<br />
+            Please use the verification code below to complete your registration:
+          </mj-text>
+  
+          <!-- OTP Code -->
+          <mj-group>
+            <mj-column>
+              <mj-text background-color="#2C3930" color="#2C3930" font-size="40px" padding="20px" align="center">
+                <strong>{{otp}}</strong>
+              </mj-text>
+            </mj-column>
+          </mj-group>
+  
+          <!-- Validity -->
+          <mj-text align="center" background-color="#D7C0AE" color="#2C3930" padding="15px" font-size="13px" font-weight="500">
+            Valid for 10 minutes only
+          </mj-text>
+  
+          <!-- Disclaimer -->
+          <mj-text background-color="#B7C4CF" padding="15px" border-left="4px solid #967E76" font-size="13px" color="#3F4F44">
+            If you didn't request this code, please ignore this email or contact our support team.
+          </mj-text>
+  
+          <mj-text align="center" color="#3F4F44" padding-top="10px" font-size="14px">
+            Get ready to explore our artisanal collection of handcrafted garments and textiles!
+          </mj-text>
+  
+        </mj-column>
+      </mj-section>
+  
+      <!-- Footer -->
+      <mj-section background-color="#2C3930" padding="20px 0">
+        <mj-column>
+          <mj-social font-size="14px" icon-size="20px" mode="horizontal" align="center" color="#2C3930">
+            <mj-social-element name="facebook" href="#" background-color="#A27B5C" border-radius="50%"></mj-social-element>
+            <mj-social-element name="linkedin" href="#" background-color="#A27B5C" border-radius="50%"></mj-social-element>
+            <mj-social-element name="instagram" href="#" background-color="#A27B5C" border-radius="50%"></mj-social-element>
+          </mj-social>
+  
+          <mj-text align="center" color="#DCD7C9" font-size="12px">
+            © 2025 Arister. All rights reserved.<br />
+            Traditional Craftsmanship, Modern Elegance
+          </mj-text>
+        </mj-column>
+      </mj-section>
+  
+    </mj-body>
+  </mjml>
+  
