@@ -23,7 +23,7 @@ router.post("/forgot", async (req, res) => {
   await user.save();
 
   // Send email
-  const resetUrl = `${process.env.CLIENT_URL || "http://localhost:3000"}/forgotpassword/reset/${resetToken}`;
+  const resetUrl = `${process.env.CLIENT_URL || "https://aristerfront.onrender.com"}/forgotpassword/reset/${resetToken}`;
   await transporter.sendMail({
     to: user.email,
     subject: "Password Reset Request",
